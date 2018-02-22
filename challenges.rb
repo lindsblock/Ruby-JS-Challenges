@@ -88,3 +88,32 @@ var puppy = {
 console.log(puppy.name)
 delete puppy.name
 console.log(puppy.name)
+
+#Write a script to remove a specific element from an array.
+var array= ["monkey", "dog", "cat", "bunny"]
+ 
+console.log(array.splice(2, 1))
+console.log(array)
+
+#Write a script function that returns a passed string with letters in alphabetical order.
+
+function alphabet_order(str)
+  {
+return str.split('').sort().join('');
+  }
+console.log(alphabet_order("monkey"));
+
+#Write a script that accepts a string as a parameter and converts the first letter of 
+#each word of the string in upper case. took this one off google.
+function caps(str) 
+{
+    str = str.split(" ");
+
+    for (var i = 0, x = str.length; i < x; i++) {
+        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(" ");
+}
+
+console.log(caps("My dog wendy is the cutest pupper on earth"));
